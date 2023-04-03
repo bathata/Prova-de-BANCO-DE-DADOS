@@ -25,7 +25,20 @@ $resultado_usuarios = $conexao->query($sql_usuarios);
 
       <body>
 
+      <header>
+
         <h1>Empréstimo</h1>
+
+      </header>
+
+      <nav> 
+
+        <p><a href="index.php">Voltar à página inicial</a></p>
+
+      </nav>
+
+      <main>
+
         <form method="post" action="emprestimo_confirmacao.php">
           <input type="hidden" name="id_livro" value="<?php echo $id_livro ?>">
           <label>Usuário:</label>
@@ -40,8 +53,15 @@ $resultado_usuarios = $conexao->query($sql_usuarios);
           <input type="submit" value="Confirmar empréstimo">
 
         </form>
-        
-        <p><a href="index.php">Voltar à página inicial</a></p>
+
+      </main>
+      
+      <footer>
+
+          <p> Todos os direitos reservados </p>
+
+      </footer>
+
 
       </body>
 
